@@ -1,0 +1,89 @@
+
+.home{
+    position: relative;
+}
+.image-movies{
+    border-radius: 2px;
+}
+.side-nav{
+    width: 250px;
+    height: 100vh;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    display: flex;
+   justify-content: space-between;
+  
+   flex-direction: column;
+   z-index: 999999999999;
+ }
+.item input{
+    border-radius: 0%; 
+}
+
+.nav-item a:hover{
+    color: red;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item li{
+   list-style: none;
+   padding: 15px;
+    
+}
+.open-nav{
+    top: 0;
+    bottom: 0;
+    background-color:white;
+    width: 75px;
+    left:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.logo{
+    text-align: center;
+}
+.close-open p{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.item-contact p{
+background-color: bisque;
+padding: 20px;
+border-radius: 5px;
+display: none;
+
+}
+.item-contact input{
+    border-radius: 0%;
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.479);
+    left: 0;
+    right: 0px;
+    top: 100%;
+    bottom: 0px;
+    position: absolute;
+    z-index: 99999999;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.items:hover .layer{
+    top: 0;
+}
+.items{
+    overflow: hidden;
+    position: relative;
+}
+
+.layer p{
+    font-size: 1.2rem;
+}
